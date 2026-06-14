@@ -101,7 +101,8 @@
 
       if (type === "video") {
         var src = el.getAttribute("data-src");
-        media.innerHTML = '<iframe src="' + src + '" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
+        var portrait = el.getAttribute("data-orient") === "portrait" ? ' class="is-portrait"' : "";
+        media.innerHTML = '<iframe' + portrait + ' src="' + src + '" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
       } else {
         var full = el.getAttribute("data-full") || (el.querySelector("img") && el.querySelector("img").src);
         media.innerHTML = '<img src="' + full + '" alt="' + caption + '">';

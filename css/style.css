@@ -12,8 +12,8 @@
   --text-dim: #a7a39b;
   --text-faint: #6b6862;
   --border: #2a2a2e;
-  --accent: #c9a25a;        /* warm gold */
-  --accent-soft: rgba(201, 162, 90, 0.14);
+  --accent: #e8833a;        /* burnt orange */
+  --accent-soft: rgba(232, 131, 58, 0.14);
   --overlay: rgba(5, 5, 6, 0.62);
   --shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
   --maxw: 1180px;
@@ -565,7 +565,7 @@ img { display: block; max-width: 100%; }
 }
 .acard__art::after {
   content: ""; position: absolute; inset: 0;
-  background: linear-gradient(140deg, transparent, rgba(201,162,90,0.18));
+  background: linear-gradient(140deg, transparent, rgba(232,131,58,0.18));
   border-radius: var(--radius);
 }
 .acard__main { min-width: 0; }
